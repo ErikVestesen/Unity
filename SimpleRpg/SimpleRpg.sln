@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleRpg.Plugins", "SimpleRpg.Plugins.csproj", "{FAB95291-0524-45A2-BF2D-317E9077C013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleRpg", "SimpleRpg.csproj", "{4732BC2A-F9AC-524F-8217-6F7B886E1939}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleRpg.Editor.Plugins", "SimpleRpg.Editor.Plugins.csproj", "{20F697E6-2938-C697-DD92-1622E523CF4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAB95291-0524-45A2-BF2D-317E9077C013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB95291-0524-45A2-BF2D-317E9077C013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB95291-0524-45A2-BF2D-317E9077C013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB95291-0524-45A2-BF2D-317E9077C013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4732BC2A-F9AC-524F-8217-6F7B886E1939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4732BC2A-F9AC-524F-8217-6F7B886E1939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4732BC2A-F9AC-524F-8217-6F7B886E1939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4732BC2A-F9AC-524F-8217-6F7B886E1939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20F697E6-2938-C697-DD92-1622E523CF4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20F697E6-2938-C697-DD92-1622E523CF4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20F697E6-2938-C697-DD92-1622E523CF4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20F697E6-2938-C697-DD92-1622E523CF4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
