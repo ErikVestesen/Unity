@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class Interactable : MonoBehaviour {
+    [HideInInspector]
     public NavMeshAgent playerAgent;
-    private bool hasInteracted;
+    private bool hasInteracted; 
     // move to object and interact with object.
     public virtual void MoveToInteraction(NavMeshAgent playerAgent) {
         hasInteracted = false;
