@@ -87,8 +87,11 @@
     <Compile Include="Assets\Scripts\DialogueSystem.cs" />
     <Compile Include="Assets\Scripts\IWeapon.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
+    <Compile Include="Assets\Scripts\InventoryController.cs" />
+    <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\NPC.cs" />
     <Compile Include="Assets\Scripts\PickUpItem.cs" />
+    <Compile Include="Assets\Scripts\PlayerWeaponController.cs" />
     <Compile Include="Assets\Scripts\SignPost.cs" />
     <Compile Include="Assets\Scripts\StatBonus.cs" />
     <Compile Include="Assets\Scripts\Sword.cs" />

@@ -12,4 +12,13 @@ public class CharacterStats : MonoBehaviour {
         stats[0].RemoveStatBonus(new StatBonus(-3));
         Debug.Log("Power: " + stats[0].GetCalculatedStatValue());
     }
+
+    public void AddStatBonus(List<BaseStat> statBonuses) {
+        foreach(BaseStat statBonus in statBonuses) {
+            stats.Find(x => x.StatName == statBonus.StatName );
+        }
+    }
+
+
+
 }
