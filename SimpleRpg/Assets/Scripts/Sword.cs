@@ -21,12 +21,11 @@ public class Sword : MonoBehaviour, IWeapon
 
     void OnTriggerEnter(Collider other)
     {
+        if(other.tag == "Enemy")
+        {
+            other.GetComponent<IEnemy>().TakeDamage(Stats[0].GetCalculatedStatValue());
+        }
         Debug.Log("Hit: " + other.name);
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        Debug.Log("Stopped hitting" + other.name);
     }
 
     
