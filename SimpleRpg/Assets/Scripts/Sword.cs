@@ -7,7 +7,27 @@ public class Sword : MonoBehaviour, IWeapon
 {
     public List<BaseStat> Stats { get; set;}
 
-    public void PerformAttack() {
-        Debug.Log("Attacking");
+    private Animator animator;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();    
     }
+
+    public void PerformAttack()
+    {
+        animator.SetTrigger("Base_Attack");
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Hit: " + other.name);
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        Debug.Log("Stopped hitting" + other.name);
+    }
+
+    
 }
