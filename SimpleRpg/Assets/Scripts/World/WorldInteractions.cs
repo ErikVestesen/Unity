@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.Networking;
 
-public class WorldInteractions : NetworkBehaviour {
+public class WorldInteractions : MonoBehaviour {
     NavMeshAgent playerAgent;
 
 	// Use this for initialization
@@ -13,10 +12,6 @@ public class WorldInteractions : NetworkBehaviour {
 	    
 	// Update is called once per frame
 	void Update () {
-        if (!isLocalPlayer)
-        {
-            return;
-        }
 
         // GetMouseButtonDown(0) == venstre klik
         // !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject) Holder musen over f.eks. inventory ting
