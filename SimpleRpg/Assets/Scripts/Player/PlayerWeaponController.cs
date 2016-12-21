@@ -14,7 +14,9 @@ public class PlayerWeaponController : MonoBehaviour {
     {
         characterStats = GetComponent<CharacterStats>();
 
-        GetComponent<MeshRenderer>().material.color = Color.blue;
+		var k = GetComponent<MeshRenderer> ();
+		if( k != null)
+        	k.material.color = Color.blue;
     }
 
     public void EquipWeapon(Item ItemToEquip) { // Hele det her system, kan også bruges til f.eks. at equip helm

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour {
+public class Item {
 	public List<BaseStat> Stats { get; set; }
     public string ObjectSlug { get; set; } //lowercase name of the weapon
 

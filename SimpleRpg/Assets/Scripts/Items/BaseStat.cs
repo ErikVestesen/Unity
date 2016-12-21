@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseStat : MonoBehaviour {
+public class BaseStat {
     public int BaseValue { get; set; }
     public string StatName { get; set; }
     public string StatDescription { get; set; }

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class NPC : Interactable {
     public string[] dialogue;
-    public string name; 
+	//[HideInInspector]
+	public new string name; 
 
     public override void Interact()
     {
