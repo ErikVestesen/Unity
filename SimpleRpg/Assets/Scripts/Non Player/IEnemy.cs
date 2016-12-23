@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public interface IEnemy  {
-
     void TakeDamage(int amountDamage);
     void PerformAttack();
 

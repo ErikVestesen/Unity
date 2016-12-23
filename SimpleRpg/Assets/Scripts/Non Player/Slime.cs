@@ -9,11 +9,29 @@ public class Slime : MonoBehaviour, IEnemy {
     //private float currentHealth;
 
     public Slider healthbar;
-
+    public Text healthName;
 
     void Start() {
         currentHealth = maxHealth;
+
         healthbar.value = CalculateHealth();
+        healthbar.gameObject.SetActive(false);
+
+        healthName.text = this.name;
+        healthName.gameObject.SetActive(false);
+    }
+
+    void OnMouseOver()
+    {
+
+        healthName.gameObject.SetActive(true);
+        healthbar.gameObject.SetActive(true);
+    }
+
+    void OnMouseExit()
+    {
+        healthName.gameObject.SetActive(false);
+        healthbar.gameObject.SetActive(false);
     }
 
     public void PerformAttack()
@@ -30,6 +48,8 @@ public class Slime : MonoBehaviour, IEnemy {
     }
 
     void Die() {
+        healthName.gameObject.SetActive(false);
+        healthbar.gameObject.SetActive(false);
         Destroy(gameObject);
     }
 
