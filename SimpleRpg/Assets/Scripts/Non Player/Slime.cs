@@ -2,13 +2,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Slime : MonoBehaviour, IEnemy {
     public float currentHealth,maxHealth, power, toughness;
     //private float currentHealth;
 
+    public Slider healthbar;
+
+
     void Start() {
         currentHealth = maxHealth;
+        healthbar.value = CalculateHealth();
     }
 
     public void PerformAttack()
@@ -18,12 +23,18 @@ public class Slime : MonoBehaviour, IEnemy {
 
     public void TakeDamage(int amountDamage) {
         currentHealth -= amountDamage;
-        if(currentHealth <= 0 ) {
+        healthbar.value = CalculateHealth();
+        if (currentHealth <= 0 ) {
             Die();
         }
     }
 
     void Die() {
         Destroy(gameObject);
+    }
+
+    float CalculateHealth()
+    {
+        return currentHealth / maxHealth;
     }
 }
