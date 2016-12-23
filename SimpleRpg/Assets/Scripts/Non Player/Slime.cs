@@ -14,17 +14,21 @@ public class Slime : MonoBehaviour, IEnemy {
     void Start() {
         currentHealth = maxHealth;
 
-        healthbar.value = CalculateHealth();
+        //healthbar.value = CalculateHealth();
         healthbar.gameObject.SetActive(false);
 
-        healthName.text = this.name;
+        //healthName.text = this.name;
         healthName.gameObject.SetActive(false);
     }
 
     void OnMouseOver()
     {
-
+        //Set name of current object
+        healthName.text = this.name;
         healthName.gameObject.SetActive(true);
+
+        //Set health of current object
+        healthbar.value = CalculateHealth();
         healthbar.gameObject.SetActive(true);
     }
 
