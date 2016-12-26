@@ -75,6 +75,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Downloaded Assets\RPGPackFree\Scripts\BowString.cs" />
+    <Compile Include="Assets\Downloaded Assets\RPGPackFree\Scripts\OpenChest.cs" />
     <Compile Include="Assets\Downloaded Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\Downloaded Assets\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
     <Compile Include="Assets\Downloaded Assets\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
