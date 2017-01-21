@@ -5,7 +5,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Slime : MonoBehaviour, IEnemy {
-    public float currentHealth,maxHealth, power, toughness;
+    private float currentHealth;
+    public float maxHealth, power, toughness, xp;
     //private float currentHealth;
 
     public Slider healthbar;
