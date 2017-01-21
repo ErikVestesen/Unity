@@ -129,6 +129,7 @@
     <Compile Include="Assets\Downloaded Assets\Standard Assets\Utility\SimpleMouseRotator.cs" />
     <Compile Include="Assets\Downloaded Assets\Standard Assets\Utility\SmoothFollow.cs" />
     <Compile Include="Assets\Scripts\Items\ActionItem.cs" />
+    <Compile Include="Assets\Scripts\Items\Axe.cs" />
     <Compile Include="Assets\Scripts\Items\BaseStat.cs" />
     <Compile Include="Assets\Scripts\Items\IWeapon.cs" />
     <Compile Include="Assets\Scripts\Items\Interactable.cs" />
